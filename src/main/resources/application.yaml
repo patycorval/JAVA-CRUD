@@ -3,7 +3,7 @@ server:
 
 spring:
     datasource:
-        url: jdbc:postgresql://dpg-cstk0q0gph6c739fij40-a.oregon-postgres.render.com/banco
+        url: jdbc:postgresql://dpg-cstk0q0gph6c739fij40-a.oregon-postgres.render.com/banco_x8ef
         username: banco_x8ef_user
         password: Tb8XSspuosuCfijTkOvdLyyIWQuV0Tnd
         driver-class-name: org.postgresql.Driver
