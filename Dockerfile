@@ -17,4 +17,6 @@ RUN chmod 777 mvnw
 # vai gerar o war
 RUN ./mvnw package
 
+RUN ls -l ./target
+
 CMD ["java", "-jar", "target/sitebd.war"]
