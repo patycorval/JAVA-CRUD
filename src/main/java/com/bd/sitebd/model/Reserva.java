@@ -3,8 +3,6 @@ package com.bd.sitebd.model;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-import javax.swing.Spring;
-
 import org.springframework.format.annotation.DateTimeFormat;
 
 public class Reserva {
