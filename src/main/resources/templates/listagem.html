@@ -35,7 +35,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr th:each="reserva : ${reservas}">
+                <tr th:each="reserva : ${reservas}"> <!--reservas é um atributo do Model que foi passado do controller p a view -->
                     <td th:text="${reserva.id}"></td>
                     <td th:text="${reserva.numero}"></td>
                     <td th:text="${reserva.nome}"></td>

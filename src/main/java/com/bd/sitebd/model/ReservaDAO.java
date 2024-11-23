@@ -1,5 +1,9 @@
 package com.bd.sitebd.model;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -10,19 +14,20 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import jakarta.annotation.PostConstruct;
+//utiliza JDBC template p interagir c o BD
 
 @Repository
 public class ReservaDAO {
     /* DAO = Data Acssess Object */
 
     @Autowired
-    DataSource dataSource;
+    DataSource dataSource; //injetar uma instância de DataSource
 
-    JdbcTemplate jdbc;
+    JdbcTemplate jdbc; //simplifica a interação com o banco de dados,
 
     @PostConstruct
     private void initialize(){
-        jdbc = new JdbcTemplate(dataSource);
+        jdbc = new JdbcTemplate(dataSource); // jdbc configurada com o DataSource, executa operações no bd de maneira mais simples com JdbcTemplate.
     }
 
     public void inserir(Reserva res){   
@@ -43,6 +48,7 @@ public class ReservaDAO {
         String sql = "Select * from reserva;";
         return jdbc.queryForList(sql);
     }
+
 
     public void atualizarCliente(int id, Reserva res){
         String sql = "UPDATE reserva SET ";
