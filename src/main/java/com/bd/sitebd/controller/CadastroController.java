@@ -23,7 +23,7 @@ public class CadastroController {
     private ApplicationContext context;
 
     @GetMapping("/") 
-    public String Principal(Model model){
+    public String Principal(Model model){ //"caixa" onde coloco os dados q vao p front
         model.addAttribute("activePage", "principal");
         return "principal"; 
     }

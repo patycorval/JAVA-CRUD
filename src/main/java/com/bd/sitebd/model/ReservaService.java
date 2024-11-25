@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 // responsável pela lógica de negócios
 @Service
 public class ReservaService {
-    // CONEXAO É O SERVICE, OU SEJA, O FRONT SO ENXERGA AQUI, ENQUANTO O DAO É ESCONDIDO (A VIEW NAO O VÊ)
+    // CONEXAO É O SERVICE, OU SEJA, O FRONT SO ENXERGA AQUI, ENQUANTO O DAO É ESCONDIDO (A VIEW NAO O VÊ), chama dao
     
     @Autowired
     ReservaDAO rdao;// injeta DAO

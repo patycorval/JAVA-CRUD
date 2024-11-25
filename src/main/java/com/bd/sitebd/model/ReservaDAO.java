@@ -65,6 +65,4 @@ public class ReservaDAO {
         String sql = "DELETE FROM reserva where id = ?";
         jdbc.update(sql,id);
     }
-
-
 }
